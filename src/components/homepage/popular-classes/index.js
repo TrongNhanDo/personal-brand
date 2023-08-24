@@ -8,7 +8,7 @@ const PopularClasses = React.memo(() => {
          <div className="text-5xl font-bold">POPULAR CLASSES</div>
          <div className="flex w-full mt-20">
             <div className="w-1/2 flex flex-col">
-               <Link to="/popular-classes/cardio" className="hover:opacity-90">
+               <Link to="/classes/cardio" className="hover:opacity-90">
                   <img
                      src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=503,h=368,fit=crop/bronxltdlm/lalalalaldsfdfsgd-mp01aEkz4pC4bE1J.png"
                      alt=""
@@ -19,7 +19,7 @@ const PopularClasses = React.memo(() => {
             </div>
             <div className="w-1/2 flex flex-col items-end">
                <Link
-                  to="/popular-classes/air-yoga"
+                  to="/classes/air-yoga"
                   className="w-4/5 h-auto hover:opacity-90"
                >
                   <img
@@ -32,7 +32,7 @@ const PopularClasses = React.memo(() => {
          </div>
          <div className="flex w-full mt-20">
             <div className="w-1/2 flex flex-col">
-               <Link to="/popular-classes/lifting" className="hover:opacity-90">
+               <Link to="/classes/lifting" className="hover:opacity-90">
                   <img
                      src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=503,h=368,fit=crop/bronxltdlm/Rectangle-YbxWoy3LQXubRjXv.png"
                      alt=""
@@ -43,7 +43,7 @@ const PopularClasses = React.memo(() => {
             </div>
             <div className="w-1/2 flex flex-col items-end">
                <Link
-                  to="/popular-classes/press-and-back"
+                  to="/classes/press-and-back"
                   className="w-4/5 h-auto hover:opacity-90"
                >
                   <img
