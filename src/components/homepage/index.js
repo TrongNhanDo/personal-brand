@@ -3,7 +3,6 @@ import Banner from './banner/index';
 import PopularClasses from './popular-classes/index';
 import About from './about/index';
 import Classes from './classes';
-import Bottom from '../bottom';
 
 const HomePage = React.memo(() => {
    return (
@@ -12,7 +11,6 @@ const HomePage = React.memo(() => {
          <PopularClasses />
          <About />
          <Classes />
-         <Bottom />
       </div>
    );
 });
