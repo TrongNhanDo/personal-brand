@@ -14,17 +14,25 @@ const FooterMain = React.memo(() => {
                Sunday - Saturday 8:00 AM - 10:00 PM
             </div>
             <div className="w-full flex mt-10">
-               <Link to="https://www.twitter.com/" target="_blank">
+               <Link
+                  className="underline decoration-white"
+                  to="https://www.twitter.com/"
+                  target="_blank"
+               >
                   Twitter
                </Link>
                <Link
+                  className="mx-5 underline decoration-white"
                   to="https://www.facebook.com/"
                   target="_blank"
-                  className="mx-10"
                >
                   Facebook
                </Link>
-               <Link to="https://www.instagram.com/" target="_blank">
+               <Link
+                  className="underline decoration-white"
+                  to="https://www.instagram.com/"
+                  target="_blank"
+               >
                   Instagram
                </Link>
             </div>
