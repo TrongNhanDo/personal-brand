@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { handleScrollTop } from '../common/utils';
 
 const PressAndBack = React.memo(() => {
+   useEffect(() => {
+      handleScrollTop();
+   }, []);
+
    return (
       <div className="container-main flex bg-black py-20">
          <div className="w-1/2 text-white flex flex-col justify-center">
@@ -25,14 +30,11 @@ const PressAndBack = React.memo(() => {
          <div className="w-1/2 flex justify-end">
             <div className="w-5/6 flex flex-col items-right">
                <img
-                  src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=503,h=304,fit=crop/bronxltdlm/pexels-leon-martinez-dWj8Xkvveyf8X9Ep.jpg"
+                  src="/image/press-and-back2.avif"
                   alt=""
                   className="mb-10"
                />
-               <img
-                  src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=503,h=432,fit=crop/bronxltdlm/Rectangle-dWj8XKOE5Kfnz9wZ.png"
-                  alt=""
-               />
+               <img src="/image/press-and-back3.avif" alt="" />
             </div>
          </div>
       </div>

@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { handleScrollTop } from '../common/utils';
 
 const AirYoga = React.memo(() => {
+   useEffect(() => {
+      handleScrollTop();
+   }, []);
+
    return (
       <div className="container-main flex bg-black py-20">
          <div className="w-1/2 text-white flex flex-col justify-center">
@@ -26,15 +31,8 @@ const AirYoga = React.memo(() => {
          </div>
          <div className="w-1/2 flex justify-end">
             <div className="w-5/6 flex flex-col items-right">
-               <img
-                  src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=496,h=304,fit=crop/bronxltdlm/pexels-cottonbro-ARqG6v79Jaueplj8.jpg"
-                  alt=""
-                  className="mb-10"
-               />
-               <img
-                  src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=496,h=432,fit=crop/bronxltdlm/pexels-cottonbro-AGNxOeMl09HRr3DG.jpg"
-                  alt=""
-               />
+               <img src="/image/air-yoga1.avif" alt="" className="mb-10" />
+               <img src="/image/air-yoga2.avif" alt="" />
             </div>
          </div>
       </div>

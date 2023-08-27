@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './classes.css';
 
 const Classes = React.memo(() => {
@@ -18,9 +19,12 @@ const Classes = React.memo(() => {
                stop on by for a chat if you want to see how we do things.
             </div>
             <div className="mt-20 w-full float-left">
-               <button className="block px-10 py-5 bg-red-700 font-bold text-white">
+               <Link
+                  to="classes"
+                  className="block w-fit px-10 py-5 bg-red-700 font-bold text-white"
+               >
                   SCHEDULE
-               </button>
+               </Link>
             </div>
          </div>
       </div>

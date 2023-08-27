@@ -10,7 +10,7 @@ const PopularClasses = React.memo(() => {
             <div className="w-1/2 flex flex-col">
                <Link to="/classes/cardio" className="hover:opacity-90">
                   <img
-                     src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=503,h=368,fit=crop/bronxltdlm/lalalalaldsfdfsgd-mp01aEkz4pC4bE1J.png"
+                     src="/image/cardio1.avif"
                      alt=""
                      className="w-4/5 h-auto"
                   />
@@ -22,10 +22,7 @@ const PopularClasses = React.memo(() => {
                   to="/classes/air-yoga"
                   className="w-4/5 h-auto hover:opacity-90"
                >
-                  <img
-                     src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=503,h=368,fit=crop/bronxltdlm/woman-in-black-sports-bra-and-black-pants-sitting-on-white-m26LKr5ZNeiyXWBK.jpg"
-                     alt=""
-                  />
+                  <img src="/image/air-yoga1.avif" alt="" />
                </Link>
                <span className="mt-5 text-3xl font-bold">AirYoga</span>
             </div>
@@ -34,7 +31,7 @@ const PopularClasses = React.memo(() => {
             <div className="w-1/2 flex flex-col">
                <Link to="/classes/lifting" className="hover:opacity-90">
                   <img
-                     src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=503,h=368,fit=crop/bronxltdlm/Rectangle-YbxWoy3LQXubRjXv.png"
+                     src="/image/lifting1.avif"
                      alt=""
                      className="w-4/5 h-auto"
                   />
@@ -46,18 +43,18 @@ const PopularClasses = React.memo(() => {
                   to="/classes/press-and-back"
                   className="w-4/5 h-auto hover:opacity-90"
                >
-                  <img
-                     src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=503,h=368,fit=crop/bronxltdlm/woman-lifting-barbell-m57zVrgrrLSW97Vy.jpg"
-                     alt=""
-                  />
+                  <img src="/image/press-and-back1.avif" alt="" />
                </Link>
                <span className="mt-5 text-3xl font-bold">Press & Back</span>
             </div>
          </div>
          <div className="mt-20 flex justify-center">
-            <button className="block px-10 py-5 bg-red-700 font-bold text-white">
+            <Link
+               to="/classes"
+               className="block px-10 py-5 bg-red-700 font-bold text-white"
+            >
                CHECK ALL CLASSES
-            </button>
+            </Link>
          </div>
       </div>
    );

@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { handleScrollTop } from '../common/utils';
 
 const Classes = React.memo(() => {
+   useEffect(() => {
+      handleScrollTop();
+   }, []);
+
    return (
       <div className="container-main py-24 bg-black text-white">
          <div className="text-5xl font-bold">CLASSES</div>
          <div className="flex w-full mt-20">
             <div className="w-1/2 flex flex-col">
                <img
-                  src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=503,h=368,fit=crop/bronxltdlm/Rectangle-AMPJ7obDkMCEwjKm.png"
+                  src="/image/callanetics1.avif"
                   alt=""
                   className="w-4/5 h-auto"
                />
@@ -21,7 +26,7 @@ const Classes = React.memo(() => {
             </div>
             <div className="w-1/2 flex flex-col items-end">
                <img
-                  src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=503,h=368,fit=crop/bronxltdlm/Rectangle-dWj8XKyZe2iMWL9W.png"
+                  src="/image/air-yoga1.avif"
                   alt=""
                   className="w-4/5 h-auto"
                />
@@ -36,7 +41,7 @@ const Classes = React.memo(() => {
          <div className="flex w-full mt-20">
             <div className="w-1/2 flex flex-col">
                <img
-                  src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=503,h=368,fit=crop/bronxltdlm/Rectangle-mkEkZVqonNU7bqoW.png"
+                  src="/image/sport-dances1.avif"
                   alt=""
                   className="w-4/5 h-auto"
                />
@@ -49,7 +54,7 @@ const Classes = React.memo(() => {
             </div>
             <div className="w-1/2 flex flex-col items-end">
                <img
-                  src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=503,h=368,fit=crop/bronxltdlm/Rectangle-ARqG6KL0nETlPKwl.png"
+                  src="/image/lifting4.avif"
                   alt=""
                   className="w-4/5 h-auto"
                />
@@ -64,7 +69,7 @@ const Classes = React.memo(() => {
          <div className="flex w-full mt-20">
             <div className="w-1/2 flex flex-col">
                <img
-                  src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=503,h=368,fit=crop/bronxltdlm/Rectangle-YZ4eyK8Jl0fByMb1.png"
+                  src="/image/cardio-boxing1.avif"
                   alt=""
                   className="w-4/5 h-auto"
                />
@@ -76,11 +81,7 @@ const Classes = React.memo(() => {
                </Link>
             </div>
             <div className="w-1/2 flex flex-col items-end">
-               <img
-                  src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=503,h=368,fit=crop/bronxltdlm/img-dWj8XkjNleCgyZZD.png"
-                  alt=""
-                  className="w-4/5 h-auto"
-               />
+               <img src="/image/cardio4.avif" alt="" className="w-4/5 h-auto" />
                <Link
                   to="/classes/cardio"
                   className="mt-5 text-3xl font-bold underline decoration-white"
@@ -92,7 +93,7 @@ const Classes = React.memo(() => {
          <div className="flex w-full mt-20">
             <div className="w-1/2 flex flex-col">
                <img
-                  src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=503,h=368,fit=crop/bronxltdlm/Rectangle-dWj8XKOE5Kfnz9wZ.png"
+                  src="/image/press-and-back1.avif"
                   alt=""
                   className="w-4/5 h-auto"
                />
@@ -105,7 +106,7 @@ const Classes = React.memo(() => {
             </div>
             <div className="w-1/2 flex flex-col items-end">
                <img
-                  src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=503,h=368,fit=crop/bronxltdlm/allef-vinicius-BQYl_VxaPoU-unsplash-YBB23kQOvkSr6vk0.jpg"
+                  src="/image/body-building1.avif"
                   alt=""
                   className="w-4/5 h-auto"
                />

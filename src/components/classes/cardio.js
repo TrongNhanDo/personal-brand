@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { handleScrollTop } from '../common/utils';
 
 const Cardio = React.memo(() => {
+   useEffect(() => {
+      handleScrollTop();
+   }, []);
+
    return (
       <div className="container-main flex bg-black py-20">
          <div className="w-1/2 text-white flex flex-col justify-center">
@@ -23,15 +28,8 @@ const Cardio = React.memo(() => {
          </div>
          <div className="w-1/2 flex justify-end">
             <div className="w-5/6 flex flex-col items-right">
-               <img
-                  src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=503,h=304,fit=crop/bronxltdlm/pexels-li-sun-YBB23z2yv3HvqezM.jpg"
-                  alt=""
-                  className="mb-10"
-               />
-               <img
-                  src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=503,h=432,fit=crop/bronxltdlm/pexels-li-sun-A83boBxwyEUWLN2W.jpg"
-                  alt=""
-               />
+               <img src="/image/cardio2.avif" alt="" className="mb-10" />
+               <img src="/image/cardio3.avif" alt="" />
             </div>
          </div>
       </div>

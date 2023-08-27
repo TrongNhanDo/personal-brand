@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { handleScrollTop } from '../common/utils';
 
 const Lifting = React.memo(() => {
+   useEffect(() => {
+      handleScrollTop();
+   }, []);
+
    return (
       <div className="container-main flex bg-black py-20">
          <div className="w-1/2 text-white flex flex-col justify-center">
@@ -25,15 +30,8 @@ const Lifting = React.memo(() => {
          </div>
          <div className="w-1/2 flex justify-end">
             <div className="w-5/6 flex flex-col items-right">
-               <img
-                  src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=503,h=304,fit=crop/bronxltdlm/keeeeliaaaa-AVVlw6alo1cEBMeR.png"
-                  alt=""
-                  className="mb-10"
-               />
-               <img
-                  src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=503,h=432,fit=crop/bronxltdlm/pexels-leon-martinez-AwG67pMME3ILLj23.jpg"
-                  alt=""
-               />
+               <img src="/image/lifting2.avif" alt="" className="mb-10" />
+               <img src="/image/lifting3.avif" alt="" />
             </div>
          </div>
       </div>
