@@ -28,8 +28,12 @@ const Cardio = React.memo(() => {
          </div>
          <div className="w-1/2 flex justify-end">
             <div className="w-5/6 flex flex-col items-right">
-               <img src="/image/cardio2.avif" alt="" className="mb-10" />
-               <img src="/image/cardio3.avif" alt="" />
+               <img
+                  src={require('../../assets/image/cardio2.avif')}
+                  alt=""
+                  className="mb-10"
+               />
+               <img src={require('../../assets/image/cardio3.avif')} alt="" />
             </div>
          </div>
       </div>

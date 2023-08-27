@@ -13,7 +13,7 @@ const Classes = React.memo(() => {
          <div className="flex w-full mt-20">
             <div className="w-1/2 flex flex-col">
                <img
-                  src="/image/callanetics1.avif"
+                  src={require('../../assets/image/callanetics1.avif')}
                   alt=""
                   className="w-4/5 h-auto"
                />
@@ -26,7 +26,7 @@ const Classes = React.memo(() => {
             </div>
             <div className="w-1/2 flex flex-col items-end">
                <img
-                  src="/image/air-yoga1.avif"
+                  src={require('../../assets/image/air-yoga4.avif')}
                   alt=""
                   className="w-4/5 h-auto"
                />
@@ -41,7 +41,7 @@ const Classes = React.memo(() => {
          <div className="flex w-full mt-20">
             <div className="w-1/2 flex flex-col">
                <img
-                  src="/image/sport-dances1.avif"
+                  src={require('../../assets/image/sport-dances1.avif')}
                   alt=""
                   className="w-4/5 h-auto"
                />
@@ -54,7 +54,7 @@ const Classes = React.memo(() => {
             </div>
             <div className="w-1/2 flex flex-col items-end">
                <img
-                  src="/image/lifting4.avif"
+                  src={require('../../assets/image/lifting4.avif')}
                   alt=""
                   className="w-4/5 h-auto"
                />
@@ -69,7 +69,7 @@ const Classes = React.memo(() => {
          <div className="flex w-full mt-20">
             <div className="w-1/2 flex flex-col">
                <img
-                  src="/image/cardio-boxing1.avif"
+                  src={require('../../assets/image/cardio-boxing1.avif')}
                   alt=""
                   className="w-4/5 h-auto"
                />
@@ -81,7 +81,11 @@ const Classes = React.memo(() => {
                </Link>
             </div>
             <div className="w-1/2 flex flex-col items-end">
-               <img src="/image/cardio4.avif" alt="" className="w-4/5 h-auto" />
+               <img
+                  src={require('../../assets/image/cardio4.avif')}
+                  alt=""
+                  className="w-4/5 h-auto"
+               />
                <Link
                   to="/classes/cardio"
                   className="mt-5 text-3xl font-bold underline decoration-white"
@@ -93,7 +97,7 @@ const Classes = React.memo(() => {
          <div className="flex w-full mt-20">
             <div className="w-1/2 flex flex-col">
                <img
-                  src="/image/press-and-back1.avif"
+                  src={require('../../assets/image/press-and-back1.avif')}
                   alt=""
                   className="w-4/5 h-auto"
                />
@@ -106,7 +110,7 @@ const Classes = React.memo(() => {
             </div>
             <div className="w-1/2 flex flex-col items-end">
                <img
-                  src="/image/body-building1.avif"
+                  src={require('../../assets/image/body-building1.avif')}
                   alt=""
                   className="w-4/5 h-auto"
                />

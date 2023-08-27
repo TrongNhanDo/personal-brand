@@ -30,11 +30,14 @@ const PressAndBack = React.memo(() => {
          <div className="w-1/2 flex justify-end">
             <div className="w-5/6 flex flex-col items-right">
                <img
-                  src="/image/press-and-back2.avif"
+                  src={require('../../assets/image/press-and-back2.avif')}
                   alt=""
                   className="mb-10"
                />
-               <img src="/image/press-and-back3.avif" alt="" />
+               <img
+                  src={require('../../assets/image/press-and-back3.avif')}
+                  alt=""
+               />
             </div>
          </div>
       </div>

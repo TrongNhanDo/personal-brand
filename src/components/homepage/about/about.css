@@ -1,5 +1,5 @@
 .about {
-   background-image: url('/public//image//banner-about.avif');
+   background-image: url('/src//assets//image//banner-about.avif');
    background-position: center;
    background-size: cover;
    color: white;

@@ -10,7 +10,7 @@ const PopularClasses = React.memo(() => {
             <div className="w-1/2 flex flex-col">
                <Link to="/classes/cardio" className="hover:opacity-90">
                   <img
-                     src="/image/cardio1.avif"
+                     src={require('../../../assets/image/cardio1.avif')}
                      alt=""
                      className="w-4/5 h-auto"
                   />
@@ -22,7 +22,10 @@ const PopularClasses = React.memo(() => {
                   to="/classes/air-yoga"
                   className="w-4/5 h-auto hover:opacity-90"
                >
-                  <img src="/image/air-yoga1.avif" alt="" />
+                  <img
+                     src={require('../../../assets/image/air-yoga1.avif')}
+                     alt=""
+                  />
                </Link>
                <span className="mt-5 text-3xl font-bold">AirYoga</span>
             </div>
@@ -31,7 +34,7 @@ const PopularClasses = React.memo(() => {
             <div className="w-1/2 flex flex-col">
                <Link to="/classes/lifting" className="hover:opacity-90">
                   <img
-                     src="/image/lifting1.avif"
+                     src={require('../../../assets/image/lifting1.avif')}
                      alt=""
                      className="w-4/5 h-auto"
                   />
@@ -43,7 +46,10 @@ const PopularClasses = React.memo(() => {
                   to="/classes/press-and-back"
                   className="w-4/5 h-auto hover:opacity-90"
                >
-                  <img src="/image/press-and-back1.avif" alt="" />
+                  <img
+                     src={require('../../../assets/image/press-and-back1.avif')}
+                     alt=""
+                  />
                </Link>
                <span className="mt-5 text-3xl font-bold">Press & Back</span>
             </div>

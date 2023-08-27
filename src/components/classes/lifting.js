@@ -30,8 +30,12 @@ const Lifting = React.memo(() => {
          </div>
          <div className="w-1/2 flex justify-end">
             <div className="w-5/6 flex flex-col items-right">
-               <img src="/image/lifting2.avif" alt="" className="mb-10" />
-               <img src="/image/lifting3.avif" alt="" />
+               <img
+                  src={require('../../assets/image/lifting2.avif')}
+                  alt=""
+                  className="mb-10"
+               />
+               <img src={require('../../assets/image/lifting3.avif')} alt="" />
             </div>
          </div>
       </div>
