@@ -1,11 +1,14 @@
 {
   "files": {
-    "main.css": "/TrongNhanDo/personal-brand/static/css/main.41380035.css",
-    "main.js": "/TrongNhanDo/personal-brand/static/js/main.6db25312.js",
+    "main.css": "/TrongNhanDo/personal-brand/static/css/main.1b0b231e.css",
+    "main.js": "/TrongNhanDo/personal-brand/static/js/main.abbf1d58.js",
     "static/media/banner-top.avif": "/TrongNhanDo/personal-brand/static/media/banner-top.a2284fdb3b97522a18e9.avif",
     "static/media/banner-classes.avif": "/TrongNhanDo/personal-brand/static/media/banner-classes.25d3c79da3c10ae38d71.avif",
+    "static/media/coach3.avif": "/TrongNhanDo/personal-brand/static/media/coach3.0f776ea2cf0b97c3a495.avif",
     "static/media/banner-about.avif": "/TrongNhanDo/personal-brand/static/media/banner-about.82a3f6fe67dc4d949f9d.avif",
+    "static/media/coach2.avif": "/TrongNhanDo/personal-brand/static/media/coach2.e38abd37b6274298b579.avif",
     "static/media/callanetics1.avif": "/TrongNhanDo/personal-brand/static/media/callanetics1.9563ee2e3009c0d7c2ca.avif",
+    "static/media/coach1.avif": "/TrongNhanDo/personal-brand/static/media/coach1.a0f8e60ac06df0b833be.avif",
     "static/media/cardio1.avif": "/TrongNhanDo/personal-brand/static/media/cardio1.285d1be71b7878141553.avif",
     "static/media/body-building1.avif": "/TrongNhanDo/personal-brand/static/media/body-building1.a6f85c43731a6816ecf0.avif",
     "static/media/cardio3.avif": "/TrongNhanDo/personal-brand/static/media/cardio3.e9724fb929b043603bcc.avif",
@@ -24,11 +27,11 @@
     "static/media/sport-dances1.avif": "/TrongNhanDo/personal-brand/static/media/sport-dances1.552ea55f1c2d21654b5a.avif",
     "static/media/cardio-boxing1.avif": "/TrongNhanDo/personal-brand/static/media/cardio-boxing1.43b21c7ffc2dac2338dc.avif",
     "index.html": "/TrongNhanDo/personal-brand/index.html",
-    "main.41380035.css.map": "/TrongNhanDo/personal-brand/static/css/main.41380035.css.map",
-    "main.6db25312.js.map": "/TrongNhanDo/personal-brand/static/js/main.6db25312.js.map"
+    "main.1b0b231e.css.map": "/TrongNhanDo/personal-brand/static/css/main.1b0b231e.css.map",
+    "main.abbf1d58.js.map": "/TrongNhanDo/personal-brand/static/js/main.abbf1d58.js.map"
   },
   "entrypoints": [
-    "static/css/main.41380035.css",
-    "static/js/main.6db25312.js"
+    "static/css/main.1b0b231e.css",
+    "static/js/main.abbf1d58.js"
   ]
 }
