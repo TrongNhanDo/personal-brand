@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './about.css';
 
 const About = React.memo(() => {
    return (
-      <div className="container-main about py-28">
+      <div className="container-main about py-28 text-justify">
          <div className="w-1/2">
             <div className="text-5xl font-bold mb-14">ABOUT BRONX</div>
             <div className="text-base font-medium">
@@ -16,9 +17,12 @@ const About = React.memo(() => {
                qualified trainers who can help you develop a plan.
             </div>
             <div className="mt-20">
-               <button className="block px-10 py-5 bg-red-700 font-bold text-white">
+               <Link
+                  to="/about"
+                  className="block w-fit px-10 py-5 bg-red-700 font-bold text-white"
+               >
                   SCHEDULE
-               </button>
+               </Link>
             </div>
          </div>
       </div>

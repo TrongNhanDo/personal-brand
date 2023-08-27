@@ -9,7 +9,7 @@ const PriceAndPlan = React.memo(() => {
    return (
       <div className="container-main bg-black text-white flex flex-col py-10">
          <div className="text-5xl font-bold mt-20">PRICES & PLANS</div>
-         <div className="flex w-full mt-64 mb-20">
+         <div className="flex w-full mt-72 mb-20">
             <div className="w-1/2 flex">
                <div className="w-1/2 flex flex-col">
                   <div className="text-4xl font-bold">BASIC</div>

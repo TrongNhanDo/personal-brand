@@ -4,7 +4,7 @@ import './classes.css';
 
 const Classes = React.memo(() => {
    return (
-      <div className="container-main classes py-48 flex justify-end">
+      <div className="container-main classes py-48 flex justify-end text-justify">
          <div className="w-1/2 flex flex-col items-end">
             <div className="text-5xl font-bold mb-14 w-full float-left">
                CLASSES
@@ -23,7 +23,7 @@ const Classes = React.memo(() => {
                   to="classes"
                   className="block w-fit px-10 py-5 bg-red-700 font-bold text-white"
                >
-                  SCHEDULE
+                  CLASSES
                </Link>
             </div>
          </div>

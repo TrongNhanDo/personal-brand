@@ -28,8 +28,8 @@ const HeaderMain = React.memo(() => {
             Prices & Plans
          </Link>
          <Link
-            to="/schedule"
-            className={pathname === '/schedule' ? 'text-black' : ''}
+            to="/about"
+            className={pathname === '/about' ? 'text-black' : ''}
          >
             Schedule
          </Link>

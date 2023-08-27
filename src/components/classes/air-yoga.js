@@ -7,7 +7,7 @@ const AirYoga = React.memo(() => {
    }, []);
 
    return (
-      <div className="container-main flex bg-black py-20">
+      <div className="container-main flex bg-black py-20 text-justify">
          <div className="w-1/2 text-white flex flex-col justify-center">
             <div className="text-5xl font-bold mb-10">Air Yoga</div>
             <div className="text-xl font-medium">

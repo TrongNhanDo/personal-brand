@@ -7,7 +7,7 @@ const PressAndBack = React.memo(() => {
    }, []);
 
    return (
-      <div className="container-main flex bg-black py-20">
+      <div className="container-main flex bg-black py-20 text-justify">
          <div className="w-1/2 text-white flex flex-col justify-center">
             <div className="text-5xl font-bold mb-10">Press & Back</div>
             <div className="text-xl font-medium">Every Day 10:00 AM</div>
