@@ -1,5 +1,6 @@
 import React from 'react';
 import './banner.css';
+import { Link } from 'react-router-dom';
 
 const Banner = React.memo(() => {
    return (
@@ -11,9 +12,12 @@ const Banner = React.memo(() => {
             Empower yourself to make the changes you need to make
          </div>
          <div>
-            <button className="block px-10 py-5 bg-red-700 font-bold mb-16">
+            <Link
+               to="/price-and-plan"
+               className="block w-fit px-10 py-5 bg-red-700 font-bold mb-16"
+            >
                LET'S GET STARTED
-            </button>
+            </Link>
          </div>
       </div>
    );

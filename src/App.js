@@ -9,6 +9,7 @@ import AirYoga from './components/classes/air-yoga';
 import Lifting from './components/classes/lifting';
 import PressAndBack from './components/classes/press_and_back';
 import Classes from './components/classes';
+import PriceAndPlan from './components/price-and-plan';
 
 function App() {
    return (
@@ -16,6 +17,7 @@ function App() {
          <HeaderMain />
          <Routes>
             <Route path="/" element={<HomePage />}></Route>
+            <Route path="/price-and-plan" element={<PriceAndPlan />}></Route>
             <Route path="/classes" element={<Classes />}></Route>
             <Route path="/classes/cardio" element={<Cardio />}></Route>
             <Route path="/classes/air-yoga" element={<AirYoga />}></Route>
