@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/TrongNhanDo/personal-brand/static/css/main.41380035.css",
+    "main.js": "/TrongNhanDo/personal-brand/static/js/main.d52f5dd3.js",
+    "static/media/banner-top.avif": "/TrongNhanDo/personal-brand/static/media/banner-top.a2284fdb3b97522a18e9.avif",
+    "static/media/banner-classes.avif": "/TrongNhanDo/personal-brand/static/media/banner-classes.25d3c79da3c10ae38d71.avif",
+    "static/media/banner-about.avif": "/TrongNhanDo/personal-brand/static/media/banner-about.82a3f6fe67dc4d949f9d.avif",
+    "index.html": "/TrongNhanDo/personal-brand/index.html",
+    "main.41380035.css.map": "/TrongNhanDo/personal-brand/static/css/main.41380035.css.map",
+    "main.d52f5dd3.js.map": "/TrongNhanDo/personal-brand/static/js/main.d52f5dd3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.41380035.css",
+    "static/js/main.d52f5dd3.js"
+  ]
+}
