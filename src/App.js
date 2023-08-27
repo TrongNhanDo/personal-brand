@@ -16,16 +16,13 @@ function App() {
       <div className="App">
          <HeaderMain />
          <Routes>
-            <Route path="/" element={<HomePage />}></Route>
-            <Route path="/price-and-plan" element={<PriceAndPlan />}></Route>
-            <Route path="/classes" element={<Classes />}></Route>
-            <Route path="/classes/cardio" element={<Cardio />}></Route>
-            <Route path="/classes/air-yoga" element={<AirYoga />}></Route>
-            <Route path="/classes/lifting" element={<Lifting />}></Route>
-            <Route
-               path="/classes/press-and-back"
-               element={<PressAndBack />}
-            ></Route>
+            <Route index element={<HomePage />} />
+            <Route path="/price-and-plan" element={<PriceAndPlan />} />
+            <Route path="/classes" element={<Classes />} />
+            <Route path="/classes/cardio" element={<Cardio />} />
+            <Route path="/classes/air-yoga" element={<AirYoga />} />
+            <Route path="/classes/lifting" element={<Lifting />} />
+            <Route path="/classes/press-and-back" element={<PressAndBack />} />
          </Routes>
          <Bottom />
          <FooterMain />
