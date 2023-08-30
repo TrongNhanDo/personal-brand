@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal-brand/static/css/main.2e39af00.css",
-    "main.js": "/personal-brand/static/js/main.e46e57a2.js",
+    "main.css": "/personal-brand/static/css/main.e689a349.css",
+    "main.js": "/personal-brand/static/js/main.cf4dc85e.js",
     "static/media/banner-top.avif": "/personal-brand/static/media/banner-top.a2284fdb3b97522a18e9.avif",
     "static/media/banner-classes.avif": "/personal-brand/static/media/banner-classes.25d3c79da3c10ae38d71.avif",
     "static/media/coach3.avif": "/personal-brand/static/media/coach3.0f776ea2cf0b97c3a495.avif",
@@ -27,11 +27,11 @@
     "static/media/sport-dances1.avif": "/personal-brand/static/media/sport-dances1.552ea55f1c2d21654b5a.avif",
     "static/media/cardio-boxing1.avif": "/personal-brand/static/media/cardio-boxing1.43b21c7ffc2dac2338dc.avif",
     "index.html": "/personal-brand/index.html",
-    "main.2e39af00.css.map": "/personal-brand/static/css/main.2e39af00.css.map",
-    "main.e46e57a2.js.map": "/personal-brand/static/js/main.e46e57a2.js.map"
+    "main.e689a349.css.map": "/personal-brand/static/css/main.e689a349.css.map",
+    "main.cf4dc85e.js.map": "/personal-brand/static/js/main.cf4dc85e.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e39af00.css",
-    "static/js/main.e46e57a2.js"
+    "static/css/main.e689a349.css",
+    "static/js/main.cf4dc85e.js"
   ]
 }
