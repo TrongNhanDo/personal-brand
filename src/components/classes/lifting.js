@@ -23,7 +23,7 @@ const Lifting = React.memo(() => {
                our classes.
             </div>
             <div className="mt-20">
-               <button className="block px-10 py-5 bg-red-700 font-bold text-white">
+               <button className="block px-10 py-5 bg-red-700 font-bold text-white hover:bg-gray-900">
                   BOOK NOW
                </button>
             </div>

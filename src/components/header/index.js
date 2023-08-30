@@ -33,6 +33,12 @@ const HeaderMain = React.memo(() => {
          >
             Schedule
          </Link>
+         <Link
+            to="/sign-up"
+            className={pathname === '/sign-up' ? 'text-black' : ''}
+         >
+            Sign up
+         </Link>
       </div>
    );
 });

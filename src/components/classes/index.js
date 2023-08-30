@@ -123,7 +123,7 @@ const Classes = React.memo(() => {
             </div>
          </div>
          <div className="mt-20 flex justify-center">
-            <button className="block px-10 py-5 bg-red-700 font-bold text-white">
+            <button className="block px-10 py-5 bg-red-700 font-bold text-white hover:bg-gray-900">
                CHECK ALL CLASSES
             </button>
          </div>

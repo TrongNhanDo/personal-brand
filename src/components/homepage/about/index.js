@@ -19,7 +19,7 @@ const About = React.memo(() => {
             <div className="mt-20">
                <Link
                   to="/about"
-                  className="block w-fit px-10 py-5 bg-red-700 font-bold text-white"
+                  className="block w-fit px-10 py-5 bg-red-700 font-bold text-white hover:bg-gray-900"
                >
                   SCHEDULE
                </Link>

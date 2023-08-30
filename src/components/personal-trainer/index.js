@@ -24,7 +24,7 @@ const PersonalTrainer = React.memo(() => {
                   for you to achieve success.
                </div>
                <div className="mt-20">
-                  <button className="block px-10 py-5 bg-red-700 font-bold text-white">
+                  <button className="block px-10 py-5 bg-red-700 font-bold text-white hover:bg-gray-900">
                      SCHEDULE WORKOUT
                   </button>
                </div>
@@ -63,7 +63,7 @@ const PersonalTrainer = React.memo(() => {
                   boxing ring.
                </div>
                <div className="mt-20">
-                  <button className="block px-10 py-5 bg-red-700 font-bold text-white">
+                  <button className="block px-10 py-5 bg-red-700 font-bold text-white hover:bg-gray-900">
                      SCHEDULE WORKOUT
                   </button>
                </div>
@@ -83,7 +83,7 @@ const PersonalTrainer = React.memo(() => {
                   body instead of against it.
                </div>
                <div className="mt-20">
-                  <button className="block px-10 py-5 bg-red-700 font-bold text-white">
+                  <button className="block px-10 py-5 bg-red-700 font-bold text-white hover:bg-gray-900">
                      SCHEDULE WORKOUT
                   </button>
                </div>

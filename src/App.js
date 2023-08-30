@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
 import FooterMain from './components/footer';
 import HeaderMain from './components/header';
@@ -12,8 +12,17 @@ import Classes from './components/classes';
 import PriceAndPlan from './components/price-and-plan';
 import PersonalTrainer from './components/personal-trainer';
 import About from './components/about';
+import SignUp from './components/signup';
+import { useMemo } from 'react';
 
 function App() {
+   const location = useLocation();
+   const pathname = location.pathname || '';
+
+   const isShowBottom = useMemo(() => {
+      return pathname !== '/sign-up';
+   }, [pathname]);
+
    return (
       <div className="App">
          <HeaderMain />
@@ -27,8 +36,9 @@ function App() {
             <Route path="/classes/press-and-back" element={<PressAndBack />} />
             <Route path="/personal-workouts" element={<PersonalTrainer />} />
             <Route path="/about" element={<About />} />
+            <Route path="/sign-up" element={<SignUp />} />
          </Routes>
-         <Bottom />
+         {isShowBottom && <Bottom />}
          <FooterMain />
       </div>
    );

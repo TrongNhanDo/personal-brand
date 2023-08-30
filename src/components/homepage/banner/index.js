@@ -14,7 +14,7 @@ const Banner = React.memo(() => {
          <div>
             <Link
                to="/price-and-plan"
-               className="block w-fit px-10 py-5 bg-red-700 font-bold mb-16"
+               className="block w-fit px-10 py-5 bg-red-700 font-bold mb-16 hover:bg-gray-900"
             >
                LET'S GET STARTED
             </Link>
