@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { handleScrollTop } from '../common/utils';
 
-const Lifting = React.memo(() => {
+const BodyBuilding = React.memo(() => {
    useEffect(() => {
       handleScrollTop();
    }, []);
@@ -10,18 +10,19 @@ const Lifting = React.memo(() => {
    return (
       <div className="container-main flex bg-black py-20 text-justify">
          <div className="w-1/2 text-white flex flex-col justify-center">
-            <div className="text-5xl font-bold mb-10">Lifting</div>
-            <div className="text-xl font-medium">Every Day 21:00</div>
+            <div className="text-5xl font-bold mb-10">Body Building</div>
+            <div className="text-xl font-medium">
+               Every Monday and Wednesday 14:00
+            </div>
             <div className="text-base font-medium mt-10">
-               Lifting isn’t just about strength. While you will build great
-               core, arm, and leg muscles while lifting, you’ll also develop
-               better coordination and an understanding of how your body
-               interacts with the world.
+               Want to tone, get muscle definition, and feel stronger in your
+               everyday life? Then our body-building classes are made for you.
             </div>
             <div className="text-base font-medium mt-8">
-               Whether you’re already an experienced weightlifter, or have never
-               picked up a dumbbell in your life, you’ll find a lot of value in
-               our classes.
+               You’ll be walked through a set of exercises together with our top
+               coaches at the start of the class with different rotations and
+               number of repetitions as the weeks go by. Pair this with our
+               cardio and cardio boxing classes for maximum effect.
             </div>
             <div className="mt-20">
                <Link
@@ -35,15 +36,18 @@ const Lifting = React.memo(() => {
          <div className="w-1/2 flex justify-end">
             <div className="w-5/6 flex flex-col items-right">
                <img
-                  src={require('../../assets/image/lifting2.avif')}
+                  src={require('../../assets/image/body-building2.avif')}
                   alt=""
                   className="mb-10"
                />
-               <img src={require('../../assets/image/lifting3.avif')} alt="" />
+               <img
+                  src={require('../../assets/image/body-building3.avif')}
+                  alt=""
+               />
             </div>
          </div>
       </div>
    );
 });
 
-export default Lifting;
+export default BodyBuilding;

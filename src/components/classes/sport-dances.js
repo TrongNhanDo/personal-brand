@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { handleScrollTop } from '../common/utils';
+import { Link } from 'react-router-dom';
 
-const Lifting = React.memo(() => {
+const SportDances = React.memo(() => {
    useEffect(() => {
       handleScrollTop();
    }, []);
@@ -10,18 +10,18 @@ const Lifting = React.memo(() => {
    return (
       <div className="container-main flex bg-black py-20 text-justify">
          <div className="w-1/2 text-white flex flex-col justify-center">
-            <div className="text-5xl font-bold mb-10">Lifting</div>
-            <div className="text-xl font-medium">Every Day 21:00</div>
+            <div className="text-5xl font-bold mb-10">Sport Dances</div>
+            <div className="text-xl font-medium">Every Thursday 18:00</div>
             <div className="text-base font-medium mt-10">
-               Lifting isn’t just about strength. While you will build great
-               core, arm, and leg muscles while lifting, you’ll also develop
-               better coordination and an understanding of how your body
-               interacts with the world.
+               Let your hair down and lose yourself to music in our
+               high-intensity sport dance classes. With mood lighting, this
+               class has been a hit ever since it was introduced.
             </div>
             <div className="text-base font-medium mt-8">
-               Whether you’re already an experienced weightlifter, or have never
-               picked up a dumbbell in your life, you’ll find a lot of value in
-               our classes.
+               We aim to combine dancing with cardio exercises in this class,
+               meaning that even if you have two left feet, you can still break
+               a sweat and enjoy the beat. Our top instructors make sure that
+               everyone leaves this class with a big, wide grin on their face.
             </div>
             <div className="mt-20">
                <Link
@@ -35,15 +35,18 @@ const Lifting = React.memo(() => {
          <div className="w-1/2 flex justify-end">
             <div className="w-5/6 flex flex-col items-right">
                <img
-                  src={require('../../assets/image/lifting2.avif')}
+                  src={require('../../assets/image/sport-dances2.avif')}
                   alt=""
                   className="mb-10"
                />
-               <img src={require('../../assets/image/lifting3.avif')} alt="" />
+               <img
+                  src={require('../../assets/image/sport-dances3.avif')}
+                  alt=""
+               />
             </div>
          </div>
       </div>
    );
 });
 
-export default Lifting;
+export default SportDances;

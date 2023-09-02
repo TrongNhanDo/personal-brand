@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { handleScrollTop } from '../common/utils';
 import { Link } from 'react-router-dom';
 
-const AirYoga = React.memo(() => {
+const CardioBoxing = React.memo(() => {
    useEffect(() => {
       handleScrollTop();
    }, []);
@@ -10,19 +10,17 @@ const AirYoga = React.memo(() => {
    return (
       <div className="container-main flex bg-black py-20 text-justify">
          <div className="w-1/2 text-white flex flex-col justify-center">
-            <div className="text-5xl font-bold mb-10">Air Yoga</div>
+            <div className="text-5xl font-bold mb-10">Cardio Boxing</div>
             <div className="text-xl font-medium">
-               Every Wednesday and Saturday 8:00 AM
+               Every Monday and Friday 17:00
             </div>
             <div className="text-base font-medium mt-10">
-               Sure, you’ve heard or regular yoga, but what about trying out
-               some new moves while floating feet into the air?
-            </div>
-            <div className="text-base font-medium mt-8">
-               Air yoga is an interdisciplinary workout that combines the
-               flexibility and technique of regular yoga with the strength
-               building of hanging. Whether you’ve tried air yoga before or are
-               a total beginner, you’re welcome in our classes.
+               Sometimes nothing feels as good as putting on your gloves and
+               kicking the crap out of a boxing bag or a set of pads. In our
+               cardio boxing classes, we’ll focus on great technique and build
+               stamina through boxing-inspired routines. There won’t be any
+               contact exercises, meaning that you can get the benefits of a
+               boxing workout without the fear of breaking someone’s nose.
             </div>
             <div className="mt-20">
                <Link
@@ -36,15 +34,18 @@ const AirYoga = React.memo(() => {
          <div className="w-1/2 flex justify-end">
             <div className="w-5/6 flex flex-col items-right">
                <img
-                  src={require('../../assets/image/air-yoga1.avif')}
+                  src={require('../../assets/image/cardio-boxing2.avif')}
                   alt=""
                   className="mb-10"
                />
-               <img src={require('../../assets/image/air-yoga2.avif')} alt="" />
+               <img
+                  src={require('../../assets/image/cardio-boxing3.jpg')}
+                  alt=""
+               />
             </div>
          </div>
       </div>
    );
 });
 
-export default AirYoga;
+export default CardioBoxing;

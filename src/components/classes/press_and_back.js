@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { handleScrollTop } from '../common/utils';
 
 const PressAndBack = React.memo(() => {
@@ -22,9 +23,12 @@ const PressAndBack = React.memo(() => {
                don’t make their way onto the official schedule.
             </div>
             <div className="mt-20">
-               <button className="block px-10 py-5 bg-red-700 font-bold text-white hover:bg-gray-900">
+               <Link
+                  to="/price-and-plan"
+                  className="w-fit block px-10 py-5 bg-red-700 font-bold text-white hover:bg-gray-900"
+               >
                   BOOK NOW
-               </button>
+               </Link>
             </div>
          </div>
          <div className="w-1/2 flex justify-end">

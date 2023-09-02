@@ -14,6 +14,10 @@ import PersonalTrainer from './components/personal-trainer';
 import About from './components/about';
 import SignUp from './components/signup';
 import { useMemo } from 'react';
+import Callanetics from './components/classes/callanetics';
+import SportDances from './components/classes/sport-dances';
+import CardioBoxing from './components/classes/cardio-boxing';
+import BodyBuilding from './components/classes/bodybuilding';
 
 function App() {
    const location = useLocation();
@@ -34,6 +38,10 @@ function App() {
             <Route path="/classes/air-yoga" element={<AirYoga />} />
             <Route path="/classes/lifting" element={<Lifting />} />
             <Route path="/classes/press-and-back" element={<PressAndBack />} />
+            <Route path="/classes/callanetics" element={<Callanetics />} />
+            <Route path="/classes/sport-dances" element={<SportDances />} />
+            <Route path="/classes/cardio-boxing" element={<CardioBoxing />} />
+            <Route path="/classes/body-building" element={<BodyBuilding />} />
             <Route path="/personal-workouts" element={<PersonalTrainer />} />
             <Route path="/about" element={<About />} />
             <Route path="/sign-up" element={<SignUp />} />
