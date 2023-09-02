@@ -1,15 +1,20 @@
 {
   "files": {
     "main.css": "/personal-brand/static/css/main.1c5f80c2.css",
-    "main.js": "/personal-brand/static/js/main.eb5f52fe.js",
+    "main.js": "/personal-brand/static/js/main.50c967c8.js",
     "static/media/banner-top.avif": "/personal-brand/static/media/banner-top.a2284fdb3b97522a18e9.avif",
     "static/media/banner-classes.avif": "/personal-brand/static/media/banner-classes.25d3c79da3c10ae38d71.avif",
+    "static/media/cardio-boxing3.jpg": "/personal-brand/static/media/cardio-boxing3.1aaa1da2ff7d9997505c.jpg",
     "static/media/coach3.avif": "/personal-brand/static/media/coach3.0f776ea2cf0b97c3a495.avif",
     "static/media/banner-about.avif": "/personal-brand/static/media/banner-about.82a3f6fe67dc4d949f9d.avif",
+    "static/media/callanetics3.avif": "/personal-brand/static/media/callanetics3.0e53b2d93215598ea179.avif",
     "static/media/coach2.avif": "/personal-brand/static/media/coach2.e38abd37b6274298b579.avif",
     "static/media/callanetics1.avif": "/personal-brand/static/media/callanetics1.9563ee2e3009c0d7c2ca.avif",
     "static/media/coach1.avif": "/personal-brand/static/media/coach1.a0f8e60ac06df0b833be.avif",
+    "static/media/cardio-boxing2.avif": "/personal-brand/static/media/cardio-boxing2.86a9b38e7d3fc5b9e830.avif",
     "static/media/cardio1.avif": "/personal-brand/static/media/cardio1.285d1be71b7878141553.avif",
+    "static/media/body-building3.avif": "/personal-brand/static/media/body-building3.8bb5478e7c0a2b90e352.avif",
+    "static/media/callanetics2.avif": "/personal-brand/static/media/callanetics2.88c5791445bb19fbe0f6.avif",
     "static/media/body-building1.avif": "/personal-brand/static/media/body-building1.a6f85c43731a6816ecf0.avif",
     "static/media/cardio3.avif": "/personal-brand/static/media/cardio3.e9724fb929b043603bcc.avif",
     "static/media/lifting3.avif": "/personal-brand/static/media/lifting3.b90e2924a668ed756ccc.avif",
@@ -21,17 +26,20 @@
     "static/media/lifting2.avif": "/personal-brand/static/media/lifting2.47d391e6aaa63fcbb413.avif",
     "static/media/lifting1.avif": "/personal-brand/static/media/lifting1.f18e873ddbe042e3640a.avif",
     "static/media/lifting4.avif": "/personal-brand/static/media/lifting4.f18e873ddbe042e3640a.avif",
+    "static/media/body-building2.avif": "/personal-brand/static/media/body-building2.c2b7686eb589de17a01e.avif",
     "static/media/cardio2.avif": "/personal-brand/static/media/cardio2.5ee8f30824fd655fd12f.avif",
     "static/media/press-and-back3.avif": "/personal-brand/static/media/press-and-back3.b49efd42a4295e8b571c.avif",
+    "static/media/sport-dances2.avif": "/personal-brand/static/media/sport-dances2.e104d8eeb7869e98edb5.avif",
     "static/media/press-and-back1.avif": "/personal-brand/static/media/press-and-back1.767c681d0901fcefc82f.avif",
     "static/media/sport-dances1.avif": "/personal-brand/static/media/sport-dances1.552ea55f1c2d21654b5a.avif",
     "static/media/cardio-boxing1.avif": "/personal-brand/static/media/cardio-boxing1.43b21c7ffc2dac2338dc.avif",
+    "static/media/sport-dances3.avif": "/personal-brand/static/media/sport-dances3.2d724cb33ade76963300.avif",
     "index.html": "/personal-brand/index.html",
     "main.1c5f80c2.css.map": "/personal-brand/static/css/main.1c5f80c2.css.map",
-    "main.eb5f52fe.js.map": "/personal-brand/static/js/main.eb5f52fe.js.map"
+    "main.50c967c8.js.map": "/personal-brand/static/js/main.50c967c8.js.map"
   },
   "entrypoints": [
     "static/css/main.1c5f80c2.css",
-    "static/js/main.eb5f52fe.js"
+    "static/js/main.50c967c8.js"
   ]
 }
