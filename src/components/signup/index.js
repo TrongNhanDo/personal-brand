@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect } from 'react';
 import { useFormik } from 'formik';
+import emailjs from '@emailjs/browser';
 import { handleScrollTop } from '../common/utils';
 import { validationSchema } from './validation';
 
@@ -8,15 +9,36 @@ const SignUp = React.memo(() => {
       handleScrollTop();
    }, []);
 
-   const onSubmit = (values) => {
-      console.log({ values });
-   };
+   const onSubmit = useCallback(async (values) => {
+      await emailjs
+         .send(
+            process.env.REACT_APP_MAIL_SERVICE_ID,
+            process.env.REACT_APP_MAIL_TEMPLATE_ID,
+            {
+               name: values.name.trim(),
+               email: values.email.trim(),
+               phone: values.phone.trim(),
+               message: values.message.trim(),
+            },
+            process.env.REACT_APP_MAIL_PUBLIC_KEY
+         )
+         .then(
+            function (response) {
+               alert('Thanks for your request!');
+               formikBag.resetForm();
+            },
+            function (error) {
+               alert('Sending email failed. Please try again');
+            }
+         );
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+   }, []);
 
    const formikBag = useFormik({
       initialValues: {
-         firstName: '',
-         lastName: '',
+         name: '',
          email: '',
+         phone: '',
          message: '',
       },
       onSubmit: (values) => onSubmit(values),
@@ -37,50 +59,50 @@ const SignUp = React.memo(() => {
          <form onSubmit={formikBag.handleSubmit}>
             <div className="w-2/5 flex flex-col mt-44">
                <div className="w-full flex flex-col font-normal">
-                  <label htmlFor="firstName">Name*</label>
+                  <label htmlFor="name">Name*</label>
                   <input
                      type="text"
-                     name="firstName"
-                     id="firstName"
+                     name="name"
+                     id="name"
                      placeholder="Your name"
                      className={`p-3 bg-gray-400 text-black placeholder:text-gray-500 hover:bg-white ${
-                        formikBag.errors && formikBag.errors.firstName
+                        formikBag.errors && formikBag.errors.name
                            ? 'bg-yellow-400 border-2 border-red-700'
                            : ''
                      }`}
-                     value={formikBag.values.firstName}
+                     value={formikBag.values.name}
                      onChange={formikBag.handleChange}
                   />
                   {formikBag.errors &&
-                     formikBag.errors.firstName &&
+                     formikBag.errors.name &&
                      formikBag.touched &&
-                     formikBag.touched.firstName && (
+                     formikBag.touched.name && (
                         <div className="text-red-700">
-                           {formikBag.errors.firstName}
+                           {formikBag.errors.name}
                         </div>
                      )}
                </div>
                <div className="w-full flex flex-col mt-5 font-normal">
-                  <label htmlFor="lastName">Last name*</label>
+                  <label htmlFor="phone">Phone*</label>
                   <input
                      type="text"
-                     name="lastName"
-                     id="lastName"
+                     name="phone"
+                     id="phone"
                      placeholder="Your last name"
                      className={`p-3 bg-gray-400 text-black placeholder:text-gray-500 hover:bg-white  ${
-                        formikBag.errors && formikBag.errors.lastName
+                        formikBag.errors && formikBag.errors.phone
                            ? 'bg-yellow-400 border-2 border-red-700'
                            : ''
                      }`}
-                     value={formikBag.values.lastName}
+                     value={formikBag.values.phone}
                      onChange={formikBag.handleChange}
                   />
                   {formikBag.errors &&
-                     formikBag.errors.lastName &&
+                     formikBag.errors.phone &&
                      formikBag.touched &&
-                     formikBag.touched.lastName && (
+                     formikBag.touched.phone && (
                         <div className="text-red-700">
-                           {formikBag.errors.lastName}
+                           {formikBag.errors.phone}
                         </div>
                      )}
                </div>
