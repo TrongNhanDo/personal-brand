@@ -1,7 +1,13 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { handleScrollTop } from '../common/utils';
 
 const PersonalTrainer = React.memo(() => {
+   const emailAddress = 'example@gmail.com';
+   const subjectMail = 'Custom from Bronx Gym & Club';
+   const bodyMail =
+      'I want to contact you for a training course at the Bronx Club';
+
    useEffect(() => {
       handleScrollTop();
    }, []);
@@ -24,9 +30,12 @@ const PersonalTrainer = React.memo(() => {
                   for you to achieve success.
                </div>
                <div className="mt-20">
-                  <button className="block px-10 py-5 bg-red-700 font-bold text-white hover:bg-gray-900">
+                  <Link
+                     to={`mailto:${emailAddress}?subject=${subjectMail} &body= ${bodyMail}`}
+                     className="block w-fit px-10 py-5 bg-red-700 font-bold text-white hover:bg-gray-900"
+                  >
                      SCHEDULE WORKOUT
-                  </button>
+                  </Link>
                </div>
             </div>
             <div className="w-1/2 flex justify-end">
@@ -63,9 +72,12 @@ const PersonalTrainer = React.memo(() => {
                   boxing ring.
                </div>
                <div className="mt-20">
-                  <button className="block px-10 py-5 bg-red-700 font-bold text-white hover:bg-gray-900">
+                  <Link
+                     to={`mailto:${emailAddress}?subject=${subjectMail} &body= ${bodyMail}`}
+                     className="block w-fit px-10 py-5 bg-red-700 font-bold text-white hover:bg-gray-900"
+                  >
                      SCHEDULE WORKOUT
-                  </button>
+                  </Link>
                </div>
             </div>
          </div>
@@ -83,9 +95,12 @@ const PersonalTrainer = React.memo(() => {
                   body instead of against it.
                </div>
                <div className="mt-20">
-                  <button className="block px-10 py-5 bg-red-700 font-bold text-white hover:bg-gray-900">
+                  <Link
+                     to={`mailto:${emailAddress}?subject=${subjectMail} &body= ${bodyMail}`}
+                     className="block w-fit px-10 py-5 bg-red-700 font-bold text-white hover:bg-gray-900"
+                  >
                      SCHEDULE WORKOUT
-                  </button>
+                  </Link>
                </div>
             </div>
             <div className="w-1/2 flex justify-end">
