@@ -5,7 +5,7 @@ import './footer.css';
 const FooterMain = React.memo(() => {
    return (
       <div className="footer container-main flex">
-         <div className="w-1/2 flex flex-col">
+         <div className="div1 w-1/2 flex flex-col">
             <div className="text-2xl font-bold">WORKING HOURS</div>
             <div className="mt-10 font-medium">
                Monday - Friday 5:00 AM - 12:00 AM
@@ -37,7 +37,7 @@ const FooterMain = React.memo(() => {
                </Link>
             </div>
          </div>
-         <div className="w-1/2 flex flex-col">
+         <div className="div2 w-1/2 flex flex-col">
             <div className="text-2xl font-bold">ADDRESS</div>
             <div className="mt-10 font-medium">
                <Link to="https://goo.gl/maps/BGa5oc6ypXKfG8cEA" target="_blank">
