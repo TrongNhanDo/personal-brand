@@ -1,0 +1,30 @@
+@media screen and (max-width: 767px) {
+   .div-about .heading1 {
+      font-size: 30px;
+   }
+
+   .div-about .div-item {
+      margin-top: 0;
+      padding-top: 0;
+   }
+
+   .div-about .div-item > div {
+      width: 100%;
+   }
+
+   .div-about .div-item > div:last-child {
+      text-align: right;
+   }
+
+   .div-about .div-item > div > div {
+      width: 100%;
+      margin-top: 5rem;
+   }
+
+   .div-about .div-item > div > div > div:first-child {
+      font-size: 25px;
+   }
+}
+
+@media screen and (min-width: 1024px) {
+}

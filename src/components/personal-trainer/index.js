@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { handleScrollTop } from '../common/utils';
+import './personal-trainer.css';
 
 const PersonalTrainer = React.memo(() => {
    const emailAddress = 'example@gmail.com';
@@ -13,11 +14,13 @@ const PersonalTrainer = React.memo(() => {
    }, []);
 
    return (
-      <div className="container-main flex flex-col text-white bg-black py-20 text-justify">
-         <div className="text-5xl font-bold mb-28">PERSONAL TRAINERS</div>
-         <div className="flex w-full">
+      <div className="personal-trainer container-main flex flex-col text-white bg-black py-20 text-justify">
+         <div className="heading1 text-5xl font-bold mb-28">
+            PERSONAL TRAINERS
+         </div>
+         <div className="item flex w-full">
             <div className="w-1/2 text-white flex flex-col justify-center">
-               <div className="text-3xl font-bold">MATTHEW HERON</div>
+               <div className="heading2 text-3xl font-bold">MATTHEW HERON</div>
                <div className="text-base font-medium mt-10">
                   Mathew is the expert to talk to if your fitness goal is to
                   lose weight or tone up. Working clients through high-intensity
@@ -39,7 +42,7 @@ const PersonalTrainer = React.memo(() => {
                </div>
             </div>
             <div className="w-1/2 flex justify-end">
-               <div className="w-5/6 flex flex-col items-right">
+               <div className="div-image w-5/6 flex flex-col items-right">
                   <img
                      src={require('../../assets/image/coach1.avif')}
                      alt=""
@@ -48,9 +51,9 @@ const PersonalTrainer = React.memo(() => {
                </div>
             </div>
          </div>
-         <div className="flex w-full">
+         <div className="item flex w-full">
             <div className="w-1/2 flex">
-               <div className="w-5/6 flex flex-col items-right">
+               <div className="div-image w-5/6 flex flex-col items-right">
                   <img
                      src={require('../../assets/image/coach2.avif')}
                      alt=""
@@ -59,7 +62,7 @@ const PersonalTrainer = React.memo(() => {
                </div>
             </div>
             <div className="w-1/2 text-white flex flex-col justify-center">
-               <div className="text-3xl font-bold">JOHN HEERON</div>
+               <div className="heading2 text-3xl font-bold">JOHN HEERON</div>
                <div className="text-base font-medium mt-10">
                   Whether you’re new to boxing or a seasoned fighter, John can
                   teach you a thing or two about keeping fit for the ring and
@@ -81,9 +84,9 @@ const PersonalTrainer = React.memo(() => {
                </div>
             </div>
          </div>
-         <div className="flex w-full">
+         <div className="item flex w-full">
             <div className="w-1/2 text-white flex flex-col justify-center">
-               <div className="text-3xl font-bold">INNA GEBROW</div>
+               <div className="heading2 text-3xl font-bold">INNA GEBROW</div>
                <div className="text-base font-medium mt-10">
                   Are you looking to improve your and joint strength? Then you
                   should get in touch within Inna for a consultation.
@@ -104,7 +107,7 @@ const PersonalTrainer = React.memo(() => {
                </div>
             </div>
             <div className="w-1/2 flex justify-end">
-               <div className="w-5/6 flex flex-col items-right">
+               <div className="div-image w-5/6 flex flex-col items-right">
                   <img
                      src={require('../../assets/image/coach3.avif')}
                      alt=""

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { handleScrollTop } from '../common/utils';
+import './index.css';
 
 const Classes = React.memo(() => {
    useEffect(() => {
@@ -8,9 +9,9 @@ const Classes = React.memo(() => {
    }, []);
 
    return (
-      <div className="container-main py-24 bg-black text-white">
-         <div className="text-5xl font-bold">CLASSES</div>
-         <div className="flex w-full mt-20">
+      <div className="div-classes container-main py-24 bg-black text-white">
+         <div className="heading1 text-5xl font-bold">CLASSES</div>
+         <div className="item flex w-full mt-20">
             <div className="w-1/2 flex flex-col">
                <img
                   src={require('../../assets/image/callanetics1.avif')}
@@ -38,7 +39,7 @@ const Classes = React.memo(() => {
                </Link>
             </div>
          </div>
-         <div className="flex w-full mt-20">
+         <div className="item flex w-full mt-20">
             <div className="w-1/2 flex flex-col">
                <img
                   src={require('../../assets/image/sport-dances1.avif')}
@@ -66,7 +67,7 @@ const Classes = React.memo(() => {
                </Link>
             </div>
          </div>
-         <div className="flex w-full mt-20">
+         <div className="item flex w-full mt-20">
             <div className="w-1/2 flex flex-col">
                <img
                   src={require('../../assets/image/cardio-boxing1.avif')}
@@ -94,7 +95,7 @@ const Classes = React.memo(() => {
                </Link>
             </div>
          </div>
-         <div className="flex w-full mt-20">
+         <div className="item flex w-full mt-20">
             <div className="w-1/2 flex flex-col">
                <img
                   src={require('../../assets/image/press-and-back1.avif')}

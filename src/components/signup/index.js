@@ -3,6 +3,7 @@ import { useFormik } from 'formik';
 import emailjs from '@emailjs/browser';
 import { handleScrollTop } from '../common/utils';
 import { validationSchema } from './validation';
+import './signup.css';
 
 const SignUp = React.memo(() => {
    useEffect(() => {
@@ -54,10 +55,12 @@ const SignUp = React.memo(() => {
    }, [formikBag]);
 
    return (
-      <div className="container-main bg-black text-white flex flex-col py-10">
-         <div className="text-5xl font-bold mt-20">SIGN UP FOR A WORKOUT</div>
+      <div className="signup container-main bg-black text-white flex flex-col py-20">
+         <div className="heading1 text-5xl font-bold mt-10">
+            SIGN UP FOR A WORKOUT
+         </div>
          <form onSubmit={formikBag.handleSubmit}>
-            <div className="w-2/5 flex flex-col mt-44">
+            <div className="div-form w-2/5 flex flex-col mt-44">
                <div className="w-full flex flex-col font-normal">
                   <label htmlFor="name">Name*</label>
                   <input

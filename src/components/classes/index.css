@@ -1,0 +1,27 @@
+@media screen and (max-width: 767px) {
+   .div-classes .heading1 {
+      font-size: 30px;
+      margin-bottom: 1rem;
+   }
+
+   .div-classes .item {
+      flex-direction: column;
+      margin-top: 0rem;
+   }
+
+   .div-classes .item div {
+      width: 100%;
+      align-items: normal;
+   }
+
+   .div-classes .item img {
+      width: 100%;
+      height: auto;
+      margin-top: 4rem;
+   }
+
+   .div-classes .item a {
+      margin-top: 0.75rem;
+      text-align: center;
+   }
+}

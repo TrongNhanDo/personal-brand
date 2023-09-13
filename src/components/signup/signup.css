@@ -1,0 +1,14 @@
+@media screen and (max-width: 767px) {
+   .signup .heading1 {
+      font-size: 30px;
+   }
+
+   .signup .div-form {
+      margin-top: 5rem;
+      width: 100%;
+   }
+
+   .signup .div-form > div:last-child {
+      margin-bottom: 0px;
+   }
+}

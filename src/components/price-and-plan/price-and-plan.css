@@ -1,0 +1,27 @@
+@media screen and (max-width: 767px) {
+   .price-and-plan .heading1 {
+      font-size: 30px;
+   }
+
+   .price-and-plan .div-content {
+      margin-top: 7rem;
+      flex-direction: column;
+   }
+
+   .price-and-plan .div-content .div-item {
+      width: 100%;
+      justify-content: space-between;
+   }
+
+   .price-and-plan .div-item:last-child {
+      margin-top: 100px;
+   }
+
+   .price-and-plan .div-item:last-child div {
+      width: auto;
+   }
+
+   .price-and-plan .div-item1 {
+      width: 75%;
+   }
+}

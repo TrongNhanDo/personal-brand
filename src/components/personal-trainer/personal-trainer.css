@@ -1,0 +1,28 @@
+@media screen and (max-width: 767px) {
+   .personal-trainer .heading1 {
+      font-size: 30px;
+      margin-bottom: 2rem;
+   }
+
+   .personal-trainer .heading2 {
+      font-size: 24px;
+   }
+
+   .personal-trainer .item {
+      flex-direction: column;
+      margin-top: 4rem;
+   }
+
+   .personal-trainer .item:last-child {
+      margin-top: 8rem;
+   }
+
+   .personal-trainer .item > div {
+      width: 100%;
+   }
+
+   .personal-trainer .item .div-image {
+      margin-top: 3rem;
+      width: 100%;
+   }
+}
