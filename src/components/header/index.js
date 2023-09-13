@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './header.css';
 
@@ -6,6 +6,10 @@ const HeaderMain = React.memo(() => {
    const location = useLocation();
    const pathname = location.pathname || '';
    const [isHeaderNormal, setIsHeaderNormal] = useState(true);
+
+   useEffect(() => {
+      setIsHeaderNormal(true);
+   }, [pathname]);
 
    return (
       <div
