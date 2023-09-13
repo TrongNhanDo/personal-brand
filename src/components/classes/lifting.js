@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { handleScrollTop } from '../common/utils';
+import './index.css';
 
 const Lifting = React.memo(() => {
    useEffect(() => {
@@ -8,17 +9,17 @@ const Lifting = React.memo(() => {
    }, []);
 
    return (
-      <div className="container-main flex bg-black py-20 text-justify">
-         <div className="w-1/2 text-white flex flex-col justify-center">
-            <div className="text-5xl font-bold mb-10">Lifting</div>
+      <div className="item-class container-main flex bg-black py-20 text-justify">
+         <div className="subitem-class w-1/2 text-white flex flex-col justify-center">
+            <div className="heading1 text-5xl font-bold mb-10">Lifting</div>
             <div className="text-xl font-medium">Every Day 21:00</div>
-            <div className="text-base font-medium mt-10">
+            <div className="text-content text-base font-medium mt-10">
                Lifting isn’t just about strength. While you will build great
                core, arm, and leg muscles while lifting, you’ll also develop
                better coordination and an understanding of how your body
                interacts with the world.
             </div>
-            <div className="text-base font-medium mt-8">
+            <div className="text-content text-base font-medium mt-8">
                Whether you’re already an experienced weightlifter, or have never
                picked up a dumbbell in your life, you’ll find a lot of value in
                our classes.
@@ -32,7 +33,7 @@ const Lifting = React.memo(() => {
                </Link>
             </div>
          </div>
-         <div className="w-1/2 flex justify-end">
+         <div className="subitem-class w-1/2 flex justify-end">
             <div className="w-5/6 flex flex-col items-right">
                <img
                   src={require('../../assets/image/lifting2.avif')}

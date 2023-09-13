@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { handleScrollTop } from '../common/utils';
 import { Link } from 'react-router-dom';
+import './index.css';
 
 const SportDances = React.memo(() => {
    useEffect(() => {
@@ -8,16 +9,18 @@ const SportDances = React.memo(() => {
    }, []);
 
    return (
-      <div className="container-main flex bg-black py-20 text-justify">
-         <div className="w-1/2 text-white flex flex-col justify-center">
-            <div className="text-5xl font-bold mb-10">Sport Dances</div>
+      <div className="item-class container-main flex bg-black py-20 text-justify">
+         <div className="subitem-class w-1/2 text-white flex flex-col justify-center">
+            <div className="heading1 text-5xl font-bold mb-10">
+               Sport Dances
+            </div>
             <div className="text-xl font-medium">Every Thursday 18:00</div>
-            <div className="text-base font-medium mt-10">
+            <div className="text-content text-base font-medium mt-10">
                Let your hair down and lose yourself to music in our
                high-intensity sport dance classes. With mood lighting, this
                class has been a hit ever since it was introduced.
             </div>
-            <div className="text-base font-medium mt-8">
+            <div className="text-content text-base font-medium mt-8">
                We aim to combine dancing with cardio exercises in this class,
                meaning that even if you have two left feet, you can still break
                a sweat and enjoy the beat. Our top instructors make sure that
@@ -32,7 +35,7 @@ const SportDances = React.memo(() => {
                </Link>
             </div>
          </div>
-         <div className="w-1/2 flex justify-end">
+         <div className="subitem-class w-1/2 flex justify-end">
             <div className="w-5/6 flex flex-col items-right">
                <img
                   src={require('../../assets/image/sport-dances2.avif')}

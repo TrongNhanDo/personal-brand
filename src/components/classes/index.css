@@ -24,4 +24,35 @@
       margin-top: 0.75rem;
       text-align: center;
    }
+
+   .item-class {
+      flex-direction: column;
+   }
+
+   .item-class .heading1 {
+      font-size: 30px;
+      margin-top: 0rem !important;
+   }
+
+   .item-class .subitem-class {
+      width: 100%;
+   }
+
+   .item-class .subitem-class:last-child {
+      justify-content: unset;
+   }
+
+   .item-class .subitem-class > div {
+      width: 100%;
+      margin-top: 5rem;
+   }
+
+   .item-class .subitem-class div img {
+      width: 100%;
+      height: auto;
+   }
+
+   .item-class .subitem-class .text-content {
+      margin-top: 2rem;
+   }
 }

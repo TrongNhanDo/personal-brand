@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { handleScrollTop } from '../common/utils';
+import './index.css';
 
 const PressAndBack = React.memo(() => {
    useEffect(() => {
@@ -8,16 +9,18 @@ const PressAndBack = React.memo(() => {
    }, []);
 
    return (
-      <div className="container-main flex bg-black py-20 text-justify">
-         <div className="w-1/2 text-white flex flex-col justify-center">
-            <div className="text-5xl font-bold mb-10">Press & Back</div>
+      <div className="item-class container-main flex bg-black py-20 text-justify">
+         <div className="subitem-class w-1/2 text-white flex flex-col justify-center">
+            <div className="heading1 text-5xl font-bold mb-10">
+               Press & Back
+            </div>
             <div className="text-xl font-medium">Every Day 10:00 AM</div>
-            <div className="text-base font-medium mt-10">
+            <div className="text-content text-base font-medium mt-10">
                There are few better full-body workouts available than our press
                and back classes. We welcome members of all abilities to our
                classes, and are always keen to help beginners make a start
             </div>
-            <div className="text-base font-medium mt-8">
+            <div className="text-content text-base font-medium mt-8">
                If you can’t find a class at a time that suits you, please get in
                touch with us, since we often hold spontaneous classes which
                don’t make their way onto the official schedule.
@@ -31,7 +34,7 @@ const PressAndBack = React.memo(() => {
                </Link>
             </div>
          </div>
-         <div className="w-1/2 flex justify-end">
+         <div className="subitem-class w-1/2 flex justify-end">
             <div className="w-5/6 flex flex-col items-right">
                <img
                   src={require('../../assets/image/press-and-back2.avif')}
