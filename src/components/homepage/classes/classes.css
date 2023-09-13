@@ -4,3 +4,20 @@
    background-size: cover;
    color: white;
 }
+
+@media screen and (max-width: 767px) {
+   .classes .div-content {
+      width: 100%;
+      align-items: normal;
+   }
+
+   .classes {
+      padding-top: 7rem;
+      padding-bottom: 7rem;
+      background-position: unset;
+   }
+
+   .classes .heading1 {
+      font-size: 30px;
+   }
+}

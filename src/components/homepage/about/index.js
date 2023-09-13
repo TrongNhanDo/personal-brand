@@ -5,8 +5,8 @@ import './about.css';
 const About = React.memo(() => {
    return (
       <div className="container-main about py-28 text-justify">
-         <div className="w-1/2">
-            <div className="text-5xl font-bold mb-14">ABOUT BRONX</div>
+         <div className="w-1/2 div-content">
+            <div className="heading1 text-5xl font-bold mb-14">ABOUT BRONX</div>
             <div className="text-base font-medium">
                We’re not here to carry you to fitness, we’re here to motivate
                you to carry yourself to your goals.

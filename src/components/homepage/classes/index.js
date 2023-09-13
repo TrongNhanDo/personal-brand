@@ -5,8 +5,8 @@ import './classes.css';
 const Classes = React.memo(() => {
    return (
       <div className="container-main classes py-48 flex justify-end text-justify">
-         <div className="w-1/2 flex flex-col items-end">
-            <div className="text-5xl font-bold mb-14 w-full float-left">
+         <div className="div-content w-1/2 flex flex-col items-end">
+            <div className="heading1 text-5xl font-bold mb-14 w-full float-left">
                CLASSES
             </div>
             <div className="text-base font-medium">

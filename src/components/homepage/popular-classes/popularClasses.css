@@ -1,0 +1,27 @@
+@media screen and (max-width: 767px) {
+   .popular-classes .heading1 {
+      font-size: 30px;
+   }
+
+   .popular-classes .div-class {
+      flex-direction: column;
+   }
+
+   .popular-classes .div-class div {
+      width: 100%;
+   }
+
+   .popular-classes .div-class div:last-child {
+      margin-top: 50px;
+      align-items: normal;
+   }
+
+   .popular-classes .div-class div a {
+      width: 100%;
+   }
+
+   .popular-classes .div-class div img {
+      width: 100%;
+      height: auto;
+   }
+}

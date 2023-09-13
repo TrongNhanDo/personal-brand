@@ -4,3 +4,17 @@
    background-size: cover;
    color: white;
 }
+
+@media screen and (max-width: 767px) {
+   .about {
+      background-position: top;
+   }
+
+   .about .div-content {
+      width: 100%;
+   }
+
+   .about .heading1 {
+      font-size: 30px;
+   }
+}

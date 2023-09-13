@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './bottom.css';
 
 const Bottom = React.memo(() => {
    return (
-      <div className="container-main my-24">
-         <div className="text-5xl font-bold">ARE YOU READY FOR CHANGES?</div>
+      <div className="div-bottom container-main my-24">
+         <div className="heading1 text-5xl font-bold">
+            ARE YOU READY FOR CHANGES?
+         </div>
          <div className="mt-14">
             <Link
                to="/sign-up"

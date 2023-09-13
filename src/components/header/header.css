@@ -12,6 +12,7 @@
    padding-right: 15px;
    display: block;
    float: left;
+   font-weight: 700;
 }
 
 .header a:first-child {

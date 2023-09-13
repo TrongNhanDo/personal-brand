@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 const PopularClasses = React.memo(() => {
    return (
-      <div className="container-main my-24">
-         <div className="text-5xl font-bold">POPULAR CLASSES</div>
-         <div className="flex w-full mt-20">
+      <div className="popular-classes container-main my-24">
+         <div className="heading1 text-5xl font-bold">POPULAR CLASSES</div>
+         <div className="div-class flex w-full mt-20">
             <div className="w-1/2 flex flex-col">
                <Link to="/classes/cardio" className="hover:opacity-90">
                   <img
@@ -30,7 +30,7 @@ const PopularClasses = React.memo(() => {
                <span className="mt-5 text-3xl font-bold">AirYoga</span>
             </div>
          </div>
-         <div className="flex w-full mt-20">
+         <div className="div-class flex w-full mt-20">
             <div className="w-1/2 flex flex-col">
                <Link to="/classes/lifting" className="hover:opacity-90">
                   <img
