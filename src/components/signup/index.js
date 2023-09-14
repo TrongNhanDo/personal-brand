@@ -60,7 +60,7 @@ const SignUp = React.memo(() => {
             SIGN UP FOR A WORKOUT
          </div>
          <form onSubmit={formikBag.handleSubmit}>
-            <div className="div-form w-2/5 flex flex-col mt-44">
+            <div className="div-form flex flex-col mt-44">
                <div className="w-full flex flex-col font-normal">
                   <label htmlFor="name">Name*</label>
                   <input

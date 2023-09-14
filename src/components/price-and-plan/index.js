@@ -10,10 +10,10 @@ const PriceAndPlan = React.memo(() => {
    return (
       <div className="price-and-plan container-main bg-black text-white flex flex-col py-10">
          <div className="heading1 text-5xl font-bold mt-20">PRICES & PLANS</div>
-         <div className="div-content flex w-full mt-72 mb-20">
+         <div className="div-content flex w-full mb-20">
             <div className="div-item w-1/2 flex">
                <div className="div-item1 w-1/2 flex flex-col">
-                  <div className="text-4xl font-bold">BASIC</div>
+                  <div className="heading2 text-4xl font-bold">BASIC</div>
                   <div className="mt-20 font-medium text-xl">INCLUDED:</div>
                   <div className="mt-10 font-medium">
                      <ul>
@@ -27,7 +27,7 @@ const PriceAndPlan = React.memo(() => {
             </div>
             <div className="div-item w-1/2 flex">
                <div className="div-item1 w-3/5 flex flex-col">
-                  <div className="text-4xl font-bold">UNLIMITED</div>
+                  <div className="heading2 text-4xl font-bold">UNLIMITED</div>
                   <div className="mt-20 font-medium text-xl">INCLUDED:</div>
                   <div className="mt-10 font-medium">
                      <ul>

@@ -1,3 +1,7 @@
+.personal-trainer .item:not(:last-child) {
+   margin-bottom: 3rem;
+}
+
 @media screen and (max-width: 767px) {
    .personal-trainer .heading1 {
       font-size: 30px;
@@ -24,5 +28,11 @@
    .personal-trainer .item .div-image {
       margin-top: 3rem;
       width: 100%;
+   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+   .personal-trainer .item:not(:last-child) {
+      margin-bottom: 6rem;
    }
 }

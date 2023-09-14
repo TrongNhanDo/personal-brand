@@ -1,6 +1,14 @@
+.price-and-plan .div-content {
+   margin-top: 10rem;
+}
+
 @media screen and (max-width: 767px) {
    .price-and-plan .heading1 {
       font-size: 30px;
+   }
+
+   .price-and-plan .heading2 {
+      font-size: 26px;
    }
 
    .price-and-plan .div-content {
