@@ -41,7 +41,7 @@ const FooterMain = React.memo(() => {
             <div className="text-2xl font-bold">ADDRESS</div>
             <div className="mt-10 font-medium">
                <Link to="https://goo.gl/maps/BGa5oc6ypXKfG8cEA" target="_blank">
-                  364 Cộng Hòa, Phường 13, Tân Bình, TP Hồ Chí Minh, Việt Nam
+                  {process.env.REACT_APP_ADDRESS}
                </Link>
             </div>
          </div>
