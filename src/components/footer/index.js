@@ -16,21 +16,21 @@ const FooterMain = React.memo(() => {
             <div className="w-full flex mt-10">
                <Link
                   className="underline decoration-white"
-                  to="https://www.twitter.com/"
+                  to="https://twitter.com/dtnhan2k"
                   target="_blank"
                >
                   Twitter
                </Link>
                <Link
                   className="mx-5 underline decoration-white"
-                  to="https://www.facebook.com/"
+                  to="https://www.facebook.com/profile.php?id=100092506451173"
                   target="_blank"
                >
                   Facebook
                </Link>
                <Link
                   className="underline decoration-white"
-                  to="https://www.instagram.com/"
+                  to="https://www.instagram.com/dtn2k_/"
                   target="_blank"
                >
                   Instagram
