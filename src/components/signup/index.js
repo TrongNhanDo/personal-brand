@@ -1,16 +1,24 @@
-import React, { useCallback, useEffect } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useFormik } from 'formik';
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { handleScrollTop } from '../common/utils';
 import { validationSchema } from './validation';
 import './signup.css';
+import Loader from '../common/loader/loader';
 
 const SignUp = React.memo(() => {
+   const [showLoading, setShowLoading] = useState(false);
+   const [isDisable, setDisable] = useState(true);
+
    useEffect(() => {
       handleScrollTop();
    }, []);
 
    const onSubmit = useCallback(async (values) => {
+      await setShowLoading(true);
+      await setDisable(false);
       await emailjs
          .send(
             process.env.REACT_APP_MAIL_SERVICE_ID,
@@ -24,12 +32,16 @@ const SignUp = React.memo(() => {
             process.env.REACT_APP_MAIL_PUBLIC_KEY
          )
          .then(
-            function (response) {
-               alert('Thanks for your request!');
+            function () {
+               setShowLoading(false);
+               setDisable(true);
+               toast.success('Thanks for your request!');
                formikBag.resetForm();
             },
-            function (error) {
-               alert('Sending email failed. Please try again');
+            function () {
+               setShowLoading(false);
+               setDisable(true);
+               toast.error('Please try again!');
             }
          );
       // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -56,6 +68,8 @@ const SignUp = React.memo(() => {
 
    return (
       <div className="signup container-main bg-black text-white flex flex-col py-20">
+         {showLoading && <Loader />}
+         <ToastContainer position="top-center" />
          <div className="heading1 text-5xl font-bold mt-10">
             SIGN UP FOR A WORKOUT
          </div>
@@ -162,6 +176,7 @@ const SignUp = React.memo(() => {
                      type="button"
                      onClick={handleSubmit}
                      className="font-medium px-12 py-4 bg-red-700 hover:bg-gray-900"
+                     disabled={!isDisable}
                   >
                      SUBMIT
                   </button>
